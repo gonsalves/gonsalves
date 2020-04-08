@@ -1,0 +1,45 @@
+@charset "utf-8";
+html { background: #FFF; color: #000;}
+body { margin: 0; padding: 0; font: 100 100% Helvetica, Arial, sans-serif; text-shadow: 0 0 0 #000; text-transform: lowercase;}
+#wrapper { position:absolute; top: 50%; height: 84px; margin-top: -42px; /* half of the height */ background: #333; width: 100%;}
+ul { list-style-type: none; display: block;}
+* html #wrapper { font-weight: 900;} 
+a:link { color: #333; text-decoration: none;}
+a:visited { color: #999; text-decoration: none;}
+a:hover { color: #F69; text-decoration: none;}
+
+#content1 {
+	float: left;
+	padding: 15px 2% 15px 2%;
+	margin: 0px;
+	border: 0px;
+	background: #333;
+	color: #FFF;
+	width: 49%; /* ie5win fudge begins */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 46%;
+	text-align: right;
+	}
+html>body #content1 {
+	width: 46%; /* ie5win fudge ends */
+	}
+	
+#content2 {
+		float: left; 
+		/* Opera5.02 will show a space at 
+		right when there is no scroll bar */
+		padding: 15px 4% 15px 0%;
+		margin: 0px;
+		border: 0px;
+		background: #FFF;
+		color: #333;
+		width: 49%; /* ie5win fudge begins */
+		voice-family: "\"}\"";
+		voice-family:inherit;
+		width: 46%;
+		}
+	html>body #content2 {
+		width: 46%; /* ie5win fudge ends */
+		}
+

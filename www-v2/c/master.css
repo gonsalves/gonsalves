@@ -1,0 +1,101 @@
+/* reset.css */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0;}
+table {	border-collapse:collapse; border-spacing:0;}
+fieldset,img { border:0;}
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal;}
+ol,ul { list-style:none;}
+caption,th { text-align:left;}
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+
+/* Float Clearing */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* Scrollbar Fix */
+html {height: 100%; margin-bottom: 0.1px;}
+
+/* Layout */
+
+body {background: #EEE; color: #000;}
+#wrapper {width: 61.0625em; text-align: center; margin: 0 auto; color: #000; background: #FFF;}
+#inner-wrap {text-align: left; padding: 0.625em; background: url('../i/Monkey-Peek.jpg') 520px 50px no-repeat;}
+
+h2 {margin: 0 0 2.8125em 0;}
+
+#nav {font: 900 1em/1 Georgia, serif; text-transform: uppercase; text-align: right; margin: 0 0 4.4375em 0;}
+#nav li {display: inline; margin-right: 1.875em;}
+#nav li#work { color: #A55550;}
+#nav li.inactive {color: #EEE;}
+
+#text {width: 39.5em; margin: 3.4375em 0 3.375em 0;}
+
+#portfolio #previous {margin-top: 2.875em;}
+
+#portfolio #featured .piece, #portfolio #featured .padded-piece {float: left; width: 29.4375em; margin-bottom: 0.75em;}
+#portfolio #featured .piece img, #portfolio #featured .padded-piece img {width: 29.4375em; border-top: 4px solid #D1465F; border-bottom: 2px solid #D1465F;}
+#portfolio #previous .piece, #portfolio #previous .padded-piece {float: left; width: 19.3125em; margin-bottom: 0.75em;}
+#portfolio #previous .piece img, #portfolio #previous .padded-piece img {width: 19.3125em; border-top: 3px solid #D1465F; border-bottom: 2px solid #D1465F;}
+
+#portfolio #featured .padded-piece {margin-right: 0.9375em;}
+#portfolio #previous .padded-piece {margin: 0 0.9375em;}
+
+#footer {border-top: 1px dotted #CCC; margin-top: 4em;}
+#footer p {margin: 0 5.0625em 0 15.1875em; padding: 0.625em 0;}
+
+/* Typography */
+
+h1 {font: 900 3.9em/1 'Times New Roman', Times, serif; color: #333;}
+h1 em {font-size: 0.26em; font-style: italic;}
+h2 {font: 100 0.8125em/1.2 'Helvetica Neue', Helvetica, Arial, sans-serif; text-transform: uppercase; color: #616161;}
+h2 strong {font-size: 1.2em; font-weight: 900;}
+h3 {font: 900 1em/0.9 Georgia, serif; color: #333; text-transform: uppercase; margin-bottom: 0.375em;}
+p {font: 100 1em/1.7 Constantia, Georgia, serif; color: #333; margin-bottom: 1em;}
+em {font-style: italic;}
+strong {font-weight: 900;}
+
+#portfolio p {font: 100 0.75em/1.7 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+#footer p {font: 100 0.625em/1.7 Georgia, serif;}
+
+/* Linkery */
+
+a:link, a:visited, a:hover, a:focus { color: #D1465F; text-decoration: none;}
+a:hover {border-bottom: 1px solid #D1465F;}
+
+/* Lightbox */
+
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(../i/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(../i/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left;}	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000;}
+
+a:hover {border: 0 none;}

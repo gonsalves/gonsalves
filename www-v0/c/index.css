@@ -1,0 +1,13 @@
+@charset "utf-8";
+html { background: #FFF; color: #000;}
+body { margin: 0; padding: 0; font: 100 100% Arial, Helvetica, sans-serif;}
+#wrapper { position:absolute; top: 50%; height: 92px; width: 100%; margin-top: -46px; /* half of the height */ background: #333;}
+.nav { list-style: none; padding: 0; margin-left: 55%; padding: 10px;}
+/* hide from Mac IE5 \*/ * html .nav { height: 1%;} /* END hide from Mac IE5 */
+.nav li { float: left; list-style: none; padding: 0; margin: 10px; width: 164px;}
+.nav li a { background-position: 0 0; background-repeat: no-repeat; display: block; float: left; overflow: hidden; height: 31px; text-indent: -1000em; text-decoration: none; width: 164px;}
+.nav a:hover { background-position: 0 -31px;}
+.nav li { margin: 0;}
+* html .nav li { margin-top: 10px;}
+  li.rg a { background: url(../i/1.gif);}
+  li.jr a { background: url(../i/2.gif);}
