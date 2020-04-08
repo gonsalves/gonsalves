@@ -1,0 +1,130 @@
+/*
+Theme Name: Pixelogue Back to Black
+Theme URI: http://pixelogue.in
+Description: Monochromatic
+Version: 2.0
+Author: Rahul Gonsalves
+
+*/
+
+/* reset.css */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0;}
+table {	border-collapse:collapse; border-spacing:0;}
+fieldset,img { border:0;}
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal;}
+ol,ul { list-style:none;}
+caption,th { text-align:left;}
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+
+/* Float Clearing */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* Scrollbar Fix */
+html { min-height: 100%; margin-bottom: 1px; font-size: 100%;}
+
+/* Globals */
+.fltLeft {float: left;}
+.fltRight {float: right;}
+
+img.fltLeft {float: left; padding-right: 12px;}
+
+/* Colours 
+
+Pink: #C5003E
+Dark Grey: #2B201F
+Pale Yellow: #F1E4B7
+Dark Purple: #601B26
+Light Green: #9DCB40
+Dark Brown: #2B201F
+*/
+
+/* Layout */
+
+	body { width: 960px; text-align: center; margin: 0 auto; font: 100%/1.6 'Helvetica Neue', Calibri, Arial, Helvetica, sans-serif; background: #CCC; color: #2B201F;}
+	#wrapper { text-align: left; font-size: 14px;  border-top: 5px solid #C5003E; background: #FFF;}
+
+/* Navigation Menu */
+	#nav {background: url('../images/BG-Brown.png') repeat; border-bottom: 2px solid #C5003E; padding: 29px 10px;}
+	#nav ul {margin: 10px 30px; float: left;}
+	#nav ul li { display: inline; margin-right: 29px;}
+	#nav ul li a:link, #nav ul li a:visited, #nav ul li a:hover, #nav ul li a:focus { font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Bold Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; text-decoration: none; color: #F1E4B7; font-size: 18px; line-height: 1.2; font-weight: 600; font-stretch: condensed;}
+	#nav ul li a:hover, body#body-index #nav ul li#nav-home a, body#body-about #nav ul li#nav-about a, body#body-work li#nav-work a, body#body-contact #nav ul li#nav-contact a { color: #9DCB40; border-bottom: 1px dotted #9DCB40;}
+
+	/* Pixelogue Logo */
+		#nav h1#logo {float: left;}
+		#nav h1#logo span {position: absolute; top: 0; left: -999px;}
+		#nav h1#logo, #nav h1#logo a { padding: 0; width: 172px; height: 51px; background: url('../images/Pixelogue-Logo.png') no-repeat; display: block; border-right: 1px dotted #6F6254; padding-right: 30px;}
+		#nav h1#logo a:hover { background: url('../images/Pixelogue-Logo.png') 0 -51px no-repeat; border-bottom: 0 none;}
+
+/* Main Content Area */
+	#content {padding: 30px 10px 20px 10px;}
+	body#body-index #content {padding: 50px 10px 20px 10px;}
+	body#body-work #content {padding-bottom: 50px;}
+
+body#body-index #primary {width: 380px; float: left; margin-right: 20px;}
+
+/* Home Page Gallery */
+	#gallery {width: 540px; float: left;}
+	#gallery ul li {margin-right: 11px; margin-bottom: 22px; float: left;}
+	#gallery ul li.last {margin-right: 0px;}
+	#gallery ul li a { display: block; border: 7px solid #2B201F; width: 156px; padding: 0; margin: 0;}
+	#gallery ul li a:hover {border: 7px solid #9DCB40;}
+	
+#gallery p {text-align: right; margin-right: 10px;}
+
+#primary {width: 220px; float: left; margin-right: 20px;}
+	body#body-about #primary {width: auto;}
+.col {width: 220px; float: left; margin-right: 20px;}
+
+	/* Slideshow Custom Styling */
+	#slider {border: 7px solid #2B201F; float: left; position:relative; width:686px; height:386px; background: #EEE url(../images/loader-1.gif) no-repeat 50% 50%;}
+	#slider img { position: absolute; top: 0px; left: 0px; display: none;}
+	#slider a { border:0; display:block;}
+	
+	.nivo-controlNav { position:absolute; left:0; bottom:-38px;}
+	.nivo-controlNav a { display:block; width:22px; height:10px; background:url(../images/Icon-Gallery-Nav.png) no-repeat; text-indent:-9999px; border:0; margin-right:3px; float:left; }
+	.nivo-controlNav a.active { background-position:0 -10px;}
+	.nivo-directionNav a { display:block; width:30px; height:30px; background:url(../images/arrows.png) no-repeat; text-indent:-9999px; border:0;}
+	a.nivo-nextNav { background-position:-30px 0; right:15px;}
+	a.nivo-prevNav { left:15px;}
+	.nivo-caption { text-shadow: 1px solid #CCC; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 600; background: #2B201F !important; color: #FFF !important; text-transform: uppercase;}
+	.nivo-caption a {  color:#efe9d1; text-decoration:underline;}
+	
+#footer { text-align: left; background: #2B201F; padding: 10px 10px 5px 10px; color: #FFF; font-size: 12px;}
+	#footer img {margin-left: 240px;}
+
+/* Typography */
+
+p {margin: 0 0 1em 0;}
+em { font-weight: 300; font-style: italic;}
+strong {font-weight: 600;}
+strong em {font-weight: 600;}
+
+ul li { margin-left: 16px; list-style-type: square;}
+
+#content h1, #content h2 { font: 600 18px/1.8 'Helvetica Neue', Helvetica, Arial, sans-serif; margin-bottom: 1em;}
+#content h1 {font-size: 22px; line-height: 1.3; font-weight: 600;}
+	body#body-index #content #primary h1, body#body-index #content #primary h2 { font-weight: 300; line-height: 1.6;}
+	body#body-index #content #primary h2 {line-height: 1.8;}
+
+body#body-index #gallery ul li {list-style-type: none; margin-left: 0;}
+#nav ul li { margin-left: 0; list-style-type: none;}
+
+body#body-about #content h1 {width: 460px; font-size: 18px; line-height: 1.5;}
+
+/* Link Styling */
+
+a:link, a:visited, a:hover, a:focus {text-decoration: none; color: #2B201F; font-weight: 500; padding-bottom: 1px;}
+a:hover { border-bottom: 1px #FF8598 dotted; color: #FF8598; padding-bottom: 1px;}
+
+.nivo-controlNav a:hover, .nivo-directionNav a:hover {border-bottom: 0 none; padding-bottom: 0;}
+
+.visit-site a {color: #2B211F; font-weight: 900; font-size: 12px; text-decoration: none; display: inline-block; width: auto; background: #EDEDED; padding: 5px 16px; border-radius: 15px; -moz-border-radius: 15px; border-bottom: none; text-transform: uppercase;}
+.visit-site a:hover { background: #9DCB40; color: #FFF;}

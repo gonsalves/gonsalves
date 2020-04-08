@@ -1,0 +1,112 @@
+/* reset.css */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0;}
+table {	border-collapse:collapse; border-spacing:0;}
+fieldset,img { border:0;}
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal;}
+ol,ul { list-style:none;}
+caption,th { text-align:left;}
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+
+/* Float Clearing */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* Scrollbar Fix */
+html { min-height: 100%; margin-bottom: 1px; font-size: 100%;}
+
+/* Globals */
+.fltLeft {float: left;}
+.fltRight {float: right;}
+
+img.fltLeft {float: left; padding-right: 12px;}
+
+/* Colours 
+
+Pink - #C5003E
+
+*/
+
+/* Layout */
+html {background: url(../i/BG-Brown-Extended.gif) repeat-x;}
+body {padding-top: 10px; width: 940px; margin: 0 auto; text-align: center; font: 100% sans-serif;;}
+#wrapper {text-align: left;}
+
+#primary { min-height: 448px;}
+	#nav { float: left; margin: 155px 0 0 44px;}
+	#nav img {margin: 13px 30px 0 -4px;}
+
+	/* Navigation Bar */
+	#nav ul {width: 69px; height: 99px; background: url(../i/Nav-Menu.png) no-repeat; position: relative;}
+	#nav ul span {position: absolute; top: 0; left: -999px;}
+	#nav ul li {margin: 0; padding: 0; list-style: none; position: absolute; top: 0;}
+	#nav ul li, #nav ul a {height: 15px; display: block;}
+	
+	#nav ul li#nav-home {left: 0px; top: 0; height: 15px; width: 69px;}
+	#nav ul li#nav-work {left: 0px; top: 28px; height: 15px; width: 69px;}
+	#nav ul li#nav-about {left: 0px; top: 56px; height: 15px; width: 69px;}
+	#nav ul li#nav-contact {left: 0px; top: 84px; height: 15px; width: 69px;}
+
+	#nav ul li#nav-home a:hover, body#body-index li#nav-home { background: url(../i/Nav-Menu.png) 0 -100px no-repeat;}
+	#nav ul li#nav-work a:hover, body#body-work li#nav-work { background: url(../i/Nav-Menu.png) 0 -128px no-repeat;}
+	#nav ul li#nav-about a:hover, body#body-about li#nav-about { background: url(../i/Nav-Menu.png) 0 -156px no-repeat;}
+	#nav ul li#nav-contact a:hover, body#body-contact li#nav-contact { background: url(../i/Nav-Menu.png) 0 -184px no-repeat;}
+	
+	/* Primary */
+	#primary #main-img { float: left;}
+	#primary #second-img { float: left; margin: 0 20px;}
+	#content {padding-top: 56px; margin-left: 170px; width: 540px; background: #372E2A;}
+	
+	/* My Role */
+	#my-role li { font: 100 12px/1.6 'Helvetica-Neue', Arial, Helvetica, sans-serif; color: #F1E4B7;}
+	
+	/* More Projects */
+	
+	#more-projects {padding: 30px 0 0 118px;}
+	#more-projects h2 {color: #611C26; font-size: 12px; text-transform: uppercase; margin-bottom: 5px;}
+	  #more-projects ul {float: left; margin-right: 20px; width: 220px;}
+	  #more-projects ul li a { color: #C5003E; font: 900 12px/2.6 'Helvetica Neue', Arial, Helvetica, sans-serif; text-decoration: none;}
+	  #more-projects ul li a:hover {color: #607E1D;}
+	  
+	/* Contact Form */
+	form#contact { width: 446px; float: left; margin-top: 28px;}
+	form#contact li label {width: 126px; padding-right: 20px; float: left;}
+	form#contact li input, form#contact li textarea { width: 300px; padding: 6px 0; background: url(../i/BG-Form.gif;) repeat; border: 0 none; color: #FFF; font: 400 15px/1.4 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 20px; float: left;}
+	form#contact li input#send-button { background: #9DCB3F; color: #FFF; width: 116px; margin-left: 126px; text-transform: uppercase;}
+	
+	/* Address */
+	#primary #address {padding-top: 55px;}
+	
+	#secondary {background: #FFF;}
+	
+/* Typography */
+
+#primary h1, form#contact li label {font: 100 13px/1.2 'HelveticaNeue-Bold', 'Helvetica Neue Bold', 'Helvetica Neue', Arial, Helvetica, sans-serif; color: #F1E4B7; text-transform: uppercase; padding: 20px 0 6px 0;}
+  form#contact li label {padding: 26px 0 0 0; font-weight: 500;}
+#primary h2 {font: 100 11px/1.2 'HelveticaNeue-Bold', 'Helvetica Neue Bold', 'Helvetica Neue', Arial, Helvetica, sans-serif; color: #F1E4B7; text-transform: uppercase;}
+
+	#primary #address h2 {font-weight: 300;}
+	#primary #address p {font: 700 13px/1.6 'Helvetica Neue', Arial, Helvetica, sans-serif; color: #F1E4B7; margin-bottom: 10px;}
+	
+	#content p {font: 100 14px/1.6 'Helvetica Neue', Arial, Helvetica, sans-serif; color: #F1E4B7; margin-bottom: 10px;}
+	body#body-about #content img#pix-logo {vertical-align: bottom; margin-bottom: -4px; margin-right: 2px;}
+	body#body-about #content p#leader {font-size: 16px; font-weight: 800;}
+	
+	body#body-about #content h2 {font-size: 13px; margin: 20px 0 10px 0;}
+
+#secondary p#mission { margin: 30px 150px 30px 80px; color: #601B26; font: 900 14px/2.2 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+#secondary p#mission img {vertical-align: bottom; margin-bottom: -4px;}
+#secondary p#mission strong {font-weight: 900; color: #C5003E;}
+#secondary p#mission em {font-weight: 900; font-style: italic;}
+
+#footer { font: 300 12px/1.6 'Helvetica Neue', Arial, Helvetica, sans-serif;}
+#footer strong { color: #607E1D; font-weight: 600;}
+
+/* Linkery */
+a:link, a:visited, 
+#footer a:link { font-weight: 600; color: #607E1D; text-decoration: none;}

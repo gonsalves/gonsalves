@@ -1,0 +1,220 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, 
+menu, nav, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+
+
+body { font:13px/1.231 sans-serif; *font-size:small; } 
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+body, select, input, textarea {   color: #444; }
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+html { overflow-y: scroll; }
+
+a:hover, a:active { outline: none; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+ul, ol { margin-left: 1.8em; }
+ol { list-style-type: decimal; }
+
+nav ul, nav li { margin: 0; } 
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td, td img { vertical-align: top; } 
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+pre {  padding: 15px;  white-space: pre;  white-space: pre-wrap;  white-space: pre-line;  word-wrap: break-word; }
+textarea { overflow: auto; } 
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px;  -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red;  box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, 
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+a:link { -webkit-tap-highlight-color: #FF5E99; } 
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; } 
+.visuallyhidden { position: absolute !important; clip: rect(1px 1px 1px 1px);  clip: rect(1px, 1px, 1px, 1px); }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after {  content: "\0020"; display: block; height: 0; visibility: hidden;} 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.fltLeft {float: left; margin-right: 12px;}
+.fltRight {float: right; margin-left: 12px;}
+
+
+ /* Primary Styles
+    Author: Rahul Gonsalves for Pixelogue
+ */
+
+html {}
+body {}
+nav { z-index: 1000; border-top: 6px solid #EEE; padding-top: 6px; position: fixed; width: 100%; top: 0; height: 50px;
+
+	/* CSS3 Gradient */
+        /* webkit example */
+        background-image: -webkit-gradient(
+          linear, left top, left bottom, from(rgba(255, 255, 255, 1.0)),
+          to(rgba(255, 255, 255, 0.5))
+        );
+
+        /* mozilla example - FF3.6+ */
+        background-image: -moz-linear-gradient(
+          right center,
+          rgba(255, 255, 255, 1.0) 20%, rgba(255, 255, 255, 0) 95%
+        );
+
+        /* IE 5.5 - 7 */
+        filter: progid:DXImageTransform.Microsoft.gradient(
+          gradientType=1, startColor=0, endColorStr=#FFFFFF
+        );
+
+        /* IE8 uses -ms-filter for whatever reason... */
+        -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+          gradientType=1, startColor=0, endColoStr=#FFFFFF
+        );
+    }
+
+nav ul li {font-size: 16px; line-height: 1.5; float: right; margin-right: 30px;}
+nav ul li a { text-decoration: none; color: #666; text-transform: uppercase; font-weight: 900; background: #EEE; padding: 10px 20px;}
+nav ul li a:hover {background: #222; color: #FFF;}
+nav ul li a img {vertical-align: text-top;}
+
+.wrap {width: 960px; margin: 0 auto;}
+
+body#body-home header h1 {font-size: 35px; margin: 130px 0 0 0;}
+	body#body-home header h1 img {vertical-align: middle;}
+
+/* Portfolio */
+#main ul#work { list-style: none; margin: 50px 0 0 0; padding: 0; width: 960px;}
+#main ul#work li { float: left; margin: 20px 10px; padding: 0; text-align: center; -moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; display: inline; width: 220px;}
+#main ul#work li a.thumb {	width: 220px; height: 293px;  border: 1px solid #ccc; cursor: pointer;}
+#main ul#work li span { width: 220px; height: 293px; overflow: hidden; display: block;}
+#main ul#work li a.thumb:hover { background: #333;}
+
+#main ul#work li h2 { font-size: 1em; font-weight: 400; margin: 0; padding: 10px 1px; text-align: left; color: #333;}
+#main ul#work li a {text-decoration: none; color: #999; display: block;}
+
+#main #who {width: 700px; margin: 0 120px; padding: 20px 0;}
+#main #who .columns { -moz-column-count: 2; -moz-column-gap: 20px; -webkit-column-count: 2; -webkit-column-gap: 20px; column-count: 2; column-gap: 20px;}
+
+#main #who h2 { column-span: all; -moz-column-span: all; -webkit-column-span: all; background: #EEE; padding: 10px 50px; text-align: center; font-size: 23px; font-weight: 900; margin-bottom: 1em; position: relative; color: #111;}
+
+/* CSS3 Triangles */
+	.triangle { border-style: solid; border-width: 1em; width:0; height:0; position: absolute; top: 0;}
+		.r {border-color: transparent transparent transparent #FFF; left: 0;}
+		.l {border-color: transparent #FFF transparent transparent; right: 0;}
+		
+#main #who img.fltLeft { border: 7px #000 solid; padding: 2px; background: #CCC;}
+
+p {line-height: 1.8; margin-bottom: 1em; font-size: 14px;}
+
+	/* Custom Work Sizes */
+	#main ul#work li.p2 {width: 460px;}
+	#main ul#work li.p2 a.thumb {width: 460px;}
+	#main ul#work li.p2 span {width: 460px;}
+
+footer.wrap { width: 700px;}
+footer h2.standards {margin: -1.45em auto 30px; font-size: 16px; text-transform: uppercase; text-align: center; width: 15em; 
+
+        background-image: -webkit-gradient(
+          linear, left top, right top, from(rgba(255, 255, 255, 1.0)),
+          to(rgba(255, 255, 255, 0.5))
+        );
+
+        /* mozilla example - FF3.6+ */
+        background-image: -moz-linear-gradient(
+          right center,
+          rgba(255, 255, 255, 1.0) 20%, rgba(255, 255, 255, 0) 95%
+        );
+
+        /* IE 5.5 - 7 */
+        filter: progid:DXImageTransform.Microsoft.gradient(
+          gradientType=1, startColor=0, endColorStr=#FFFFFF
+        );
+
+        /* IE8 uses -ms-filter for whatever reason... */
+        -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+          gradientType=1, startColor=0, endColoStr=#FFFFFF
+        );
+
+}
+
+footer ul {padding: 0; margin: 0; text-align: center;}
+footer ul li {list-style-type: none; padding: 0; margin: 0; display: inline; margin: 0 15px;}
+footer ul li img { vertical-align: middle;}
+footer ul li img:hover {opacity: 0.8; cursor: pointer;}
+
+footer p {text-align: center;}
+
+/* End Primary Styles */
+
+
+@media all and (orientation:portrait) { 
+  
+}
+
+@media all and (orientation:landscape) { 
+  
+}
+
+@media screen and (max-device-width: 480px) {
+  
+  
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  abbr:after { content: " (" attr(title) ")"; }
+  .ir a:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }  
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+

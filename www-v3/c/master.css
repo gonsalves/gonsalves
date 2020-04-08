@@ -1,0 +1,119 @@
+/*
+Theme Name: Pixelogue Back to Black
+Theme URI: http://pixelogue.in
+Description: Monochromatic
+Version: 2.0
+Author: Rahul Gonsalves
+
+*/
+
+/* reset.css */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0;}
+table {	border-collapse:collapse; border-spacing:0;}
+fieldset,img { border:0;}
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal;}
+ol,ul { list-style:none;}
+caption,th { text-align:left;}
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+
+/* Float Clearing */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* Scrollbar Fix */
+html { min-height: 100%; margin-bottom: 1px; font-size: 100%;}
+
+/* Globals */
+.fltLeft {float: left;}
+.fltRight {float: right;}
+
+img.fltLeft {float: left; padding-right: 12px;}
+
+/* Colours 
+
+Pink: #C5003E
+Dark Grey: #2B201F
+
+*/
+
+/* Layout */
+
+body { width: 960px; text-align: center; margin: 0 auto; font: 100%/1.6 'Helvetica Neue', Calibri, Arial, Helvetica, sans-serif; background: #CCC; color: #2B201F;}
+#wrapper { text-align: left; padding: 0 10px 20px 10px; font-size: 14px; background: #FFF url('../images/top.png') repeat-x;}
+
+	/* Navigation Menu */
+	#nav {margin: 40px 10px 60px 0; float: left;}
+	#nav li { display: inline; margin-right: 29px;}
+	#nav li a:link, #nav li a:visited, #nav li a:hover, #nav li a:focus { font: 900 12px/1.2 'Helvetica Neue', Calibri, Helvetica, Arial, sans-serif; text-transform: uppercase; text-decoration: none; color: #2B211F; background: #EDEDED; padding: 5px 16px; border-radius: 15px; -moz-border-radius: 15px;}
+	#nav li a:hover, body#body-about #nav li#nav-about a:link, body#body-work #nav li#nav-work a:link, body#body-contact #nav li#nav-contact a:link { background: #FF8598; color: #FFF;}
+
+	/* Home Icon */
+	#nav li#nav-home span {position: absolute; top: 0; left: -999px;}
+	#nav li#nav-home, #nav li#nav-home a { margin: 0px 20px 0 0; padding: 0; border-radius: 0; width: 49px; height: 42px; background: url('../images/Pixelogue-Logo.png') no-repeat; display:-moz-inline-stack; display: inline-block; zoom: 1; *display: inline; vertical-align: middle;}
+	#nav li#nav-home a:hover { background: url('../images/Pixelogue-Logo.png') 0 -42px no-repeat; border-radius: 0; -moz-border-radius: 0; border-bottom: 0 none;}
+
+h3#hello {float: right; margin-top: 52px; font-weight: 300;}
+h3#hello strong {font-weight: 500;}
+
+body#body-index #primary {width: 380px; float: left; margin-right: 20px;}
+#gallery {width: 540px; float: left;}
+	#gallery ul li {margin-right: 11px; margin-bottom: 22px; float: left;}
+	#gallery ul li.last {margin-right: 0px;}
+	#gallery ul li a { display: block; border: #CCC solid 7px; width: 156px; padding: 0; margin: 0;}
+	#gallery ul li a:hover {border: #FF8598 solid 7px;}
+	
+#gallery p {text-align: right; margin-right: 10px;}
+
+#primary {padding-bottom: 30px;}
+#primary .col {width: 220px; float: left; margin-right: 20px;}
+
+	/* Slideshow Custom Styling */
+	#slider {border: 7px solid #EEE; float: left; position:relative; width:686px; height:386px; background: #EEE url(../images/loader-1.gif) no-repeat 50% 50%;}
+	#slider img { position: absolute; top: 0px; left: 0px; display: none;}
+	#slider a { border:0; display:block;}
+	
+	.nivo-controlNav { position:absolute; left:0; bottom:-38px;}
+	.nivo-controlNav a { display:block; width:22px; height:10px; background:url(../images/Icon-Gallery-Nav.png) no-repeat; text-indent:-9999px; border:0; margin-right:3px; float:left; }
+	.nivo-controlNav a.active { background-position:0 -10px;}
+	.nivo-directionNav a { display:block; width:30px; height:30px; background:url(../images/arrows.png) no-repeat; text-indent:-9999px; border:0;}
+	a.nivo-nextNav { background-position:-30px 0; right:15px;}
+	a.nivo-prevNav { left:15px;}
+	.nivo-caption { text-shadow: 1px solid #CCC; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 600; background: #111 !important; color: #FFF !important; text-transform: uppercase;}
+	.nivo-caption a {  color:#efe9d1; text-decoration:underline;}
+	
+#footer { text-align: left; background: #2B201F; padding: 10px 10px 5px 10px; color: #FFF; font-size: 12px;}
+/* body#body-index #footer { background: #6c5b53; border-top: 10px solid #2B201F;}*/
+	#footer img {margin-left: 240px;}
+
+/* Typography */
+
+p {margin: 0 0 1em 0;}
+em { font-weight: 300; font-style: italic;}
+strong {font-weight: 600;}
+strong em {font-weight: 600;}
+
+ul li { margin-left: 16px; list-style-type: square;}
+
+#primary h1, #primary h2 { font: 200 18px/1.8 'Helvetica Neue', Helvetica, Arial, sans-serif; margin-bottom: 1em;}
+#primary h1 {font-size: 22px; line-height: 1.5; font-weight: 300;}
+
+body#body-index #gallery ul li {list-style-type: none; margin-left: 0;}
+#nav li { margin-left: 0; list-style-type: none;}
+
+body#body-about #primary h1 {width: 460px; font-size: 18px; line-height: 1.5;}
+
+body#body-work #primary .visit-site a {color: #2B211F; font-weight: 900; font-size: 12px; text-decoration: none; display: inline-block; width: auto; background: #EDEDED; padding: 5px 16px; border-radius: 15px; -moz-border-radius: 15px; border-bottom: none; text-transform: uppercase;}
+body#body-work #primary .visit-site a:hover { background: #FF8598; color: #FFF;}
+
+/* Link Styling */
+
+a:link, a:visited, a:hover, a:focus {text-decoration: none; color: #2B201F; font-weight: 500; padding-bottom: 1px;}
+a:hover { border-bottom: 1px #FF8598 dotted; color: #FF8598; padding-bottom: 1px;}
+
+.nivo-controlNav a:hover, .nivo-directionNav a:hover {border-bottom: 0 none; padding-bottom: 0;}

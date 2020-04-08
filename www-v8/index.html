@@ -1,0 +1,128 @@
+x`<!doctype html>  
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Pixelogue - we're a tiny Bangalore-based design studio. We enjoy building shiny internet things.</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+
+  <script>
+    $(document).ready(function() {
+	
+	  $("ul#work li").hover(function() {
+		var thumbOver = $(this).find("img").attr("src");
+		$(this).find("a.thumb").css({'background' : 'url(' + thumbOver + ') no-repeat center bottom'});
+		$(this).find("span").stop().fadeTo('normal', 0 , function() {
+			$(this).hide()
+		}); 
+	  } , function() {
+		$(this).find("span").stop().fadeTo('normal', 1).show();
+	  });
+    });
+
+  </script>
+</head>
+
+<body id="body-home">
+
+  <nav>
+    <ul>
+      <li><a href="#?w=500" rel="pop_contact" class="poplight"><img src="images/site/email.png" alt="" /> Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="container">
+
+    <header class="wrap">
+    
+      <h1>We're <img src="images/site/px-logo-full.png" alt="Pixelogue" />, and we make shiny internet things.</h1>
+
+    </header>
+    
+    <div id="main" class="wrap">
+    
+      <ul id="work" class="clearfix">
+        <li class="p2">
+		  <h2><a href="#">Scholars without Borders</a></h2>
+		  <a href="#" class="thumb"><span><img src="images/projects/swb.png" alt="Screenshot of the SWB website" /></span></a>
+        </li>
+        <li class="p1">
+		  <h2><a href="#">Centre for Learning</a></h2>
+		  <a href="#" class="thumb"><span><img src="images/projects/cfl.png" alt="Screenshot of the CFL website" /></span></a>
+        </li>
+        <li class="p1">
+		  <h2><a href="#">New Trade Union Initiative</a></h2>
+		  <a href="#" class="thumb"><span><img src="images/projects/ntui.png" alt="Screenshot of the NTUI website" /></span></a>
+        </li>
+        <li class="p1">
+		  <h2><a href="#">GallerySKE</a></h2>
+		  <a href="#" class="thumb"><span><img src="images/projects/ske.png" alt="Screenshot of the GallerySKE website" /></span></a>
+        </li>
+        <li class="p2">
+		  <h2><a href="#">IISE</a></h2>
+		  <a href="#" class="thumb"><span><img src="images/projects/iise.png" alt="Screenshot of the IISE website" /></span></a>
+        </li>
+        <li class="p1">
+		  <h2><a href="#">Raja Chidambaram</a></h2>
+		  <a href="#" class="thumb"><span><img src="images/projects/raja.png" alt="Screenshot of Raja Chidambaram's website" /></span></a>
+        </li>
+        <li class="p1">
+		  <h2><a href="#">Folklore India</a></h2>
+		  <a href="#" class="thumb"><span><img src="images/projects/folklore.png" alt="Screenshot of the Folklore India website" /></span></a>
+        </li>
+      </ul>
+      
+      <div id="who">
+      
+        <h2><span class="triangle l"></span>Who's Who?<span class="triangle r"></span></h2>
+        
+        <div class="columns">
+        
+          <img src="images/site/rahul.jpg" alt="Rahul Gonsalves" class="fltLeft" />
+        
+          <p>Pixelogue was started in 2005 by <strong>Rahul Gonsalves</strong> to help organisations and small businesses develop coherent online identities and better engage with a wider public.</p>
+
+          <p>Rahul has been building sites that have ranged in size and complexity from small portfolio websites to larger dynamic sites managed by multiple authors.</p>
+
+          <p>He has been exploring the emerging area of electronic accessibility: making electronic systems and information accessible to people with disabilities. He has presented several papers on the subject, advised the Ministry of IT and Communication, C-DAC, NIXI and private sector organisations like Wipro, Infosys and IBM on the adoption of electronic accessibility standards and has been involved in the disability sector over the last five years.</p>
+
+          <p>As a member of the Core Group on Information Technology and Communications at the National Centre for the Promotion of Employment of Disabled Persons (NCPEDP), Rahul has been involved in the drafting of the National Policy on Electronic Accessibility for the Ministry of Information and Communications Technology. Most recently, he has helped develop policy that will enable the Government of India to adopt the Web Content Accessibility Guidelines, which are a set of web standards that ensure that everyone, regardless of physical ability, is able to access the Internet.</p> 
+          
+        </div><!-- #columns -->
+      
+      </div><!-- #who -->
+      
+    </div><!-- #main -->
+
+    <footer class="wrap">
+
+      <hr />    
+    
+      <h2 class="standards">Built with Standards</h2>
+      
+      <ul class="standards">
+        <li><img src="images/site/css3.png" alt="CSS 3 Logo" title="CSS 3" /></li>
+        <li><img src="images/site/html.png" alt="HTML 5 Logo" title="HTML 5" /></li>
+        <li><img src="images/site/semantics.png" alt="Semantics Logo" title="Semantic Web" /></li>
+      </ul>
+      
+      <hr />
+
+      <p>This was<br /> <img src="images/site/px-logo-full.png" alt="Pixelogue" /><br /> You are welcome.</p>
+
+    </footer>
+
+  </div> <!-- #container -->
+
+</body>
+</html>

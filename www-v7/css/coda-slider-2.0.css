@@ -1,0 +1,54 @@
+/*
+	jQuery Coda-Slider v2.0 - http://www.ndoherty.biz/coda-slider
+	Copyright (c) 2009 Niall Doherty
+	This plugin available for use in all personal or commercial projects under both MIT and GPL licenses.
+*/
+
+/* Most common stuff you'll need to change */
+
+/*	.coda-slider { background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EEEEEE), color-stop(.6,#FFFFFF)); background: -moz-linear-gradient(0% 100% 90deg,#FFFFFF, #EEEEEE, #FFFFFF 60%); background: -moz-linear-gradient(#FFFFFF, #EEEEEE 0.9); border-bottom: 1px solid #EEE;}
+
+*/
+.coda-slider {background: #516A6C;}
+	
+	/* Use this to keep the slider content contained in a box even when JavaScript is disabled */
+	.coda-slider-no-js .coda-slider { height: 386px; overflow: auto !important;}
+	
+	/* Change the width of the entire slider (without dynamic arrows) */
+	.coda-slider, .coda-slider .panel {width:706px;} 
+	
+	/* Change margin and width of the slider (with dynamic arrows) */
+	.coda-slider-wrapper.arrows .coda-slider, .coda-slider-wrapper.arrows .coda-slider .panel {}
+	.coda-slider-wrapper.arrows .coda-slider { }
+	
+	/* Arrow styling */
+	.coda-nav-left a, .coda-nav-right a { -moz-opacity: 0.5; -webkit-opacity: 0.5; opacity: 0.5; margin-top: 183px;}
+	.coda-nav-left a {margin-right: 20px;}
+	.coda-nav-right a {margin-left: 20px;}
+	.coda-nav-left a:hover, .coda-nav-right a:hover {-moz-opacity: 1; -webkit-opacity: 1; opacity: 1; -moz-outline: 0; outline: 0;}
+
+	/* Tab nav */
+	
+	/* Panel padding */
+	.coda-slider .panel-wrapper { padding: 10px;}
+	
+	/* Preloader */
+	.coda-slider p.loading { padding: 20px; text-align: center; color: #FFF;}
+
+/* Don't change anything below here unless you know what you're doing */
+
+	/* Tabbed nav */
+	.coda-nav ul { clear: both; display: block; margin: 10px 0 10px 50px; overflow: hidden; }
+	.coda-nav ul li { display: inline;}
+	.coda-nav ul li a { background: #EEE; color: #666; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; display: block; float: left; margin-right: 25px; padding: 4px 16px; text-decoration: none }
+	.coda-nav ul li a.current { background: #99C12F; color: #FFF; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+	.coda-nav ul li a:hover { background: #39C; color: #FFF; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+	
+	/* Miscellaneous */
+	.coda-slider-wrapper { clear: both; overflow: auto; margin: 0; padding: 0; }
+	.coda-slider { float: left; overflow: hidden; position: relative }
+	.coda-slider .panel { display: block; float: left }
+	.coda-slider .panel-container { position: relative }
+	.coda-nav-left, .coda-nav-right { float: left }
+	.coda-nav-left a, .coda-nav-right a { display: block; text-align: center; text-decoration: none }
+	

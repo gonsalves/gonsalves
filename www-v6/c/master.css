@@ -1,0 +1,149 @@
+/*
+Theme Name: Green is the new Black
+Theme URI: http://pixelogue.in
+Description: Green
+Version: 2.0
+Author: Rahul Gonsalves
+
+*/
+
+/* reset.css */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0;}
+table {	border-collapse:collapse; border-spacing:0;}
+fieldset,img { border:0;}
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal;}
+ol,ul { list-style:none;}
+caption,th { text-align:left;}
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+
+/* Float Clearing */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* Scrollbar Fix */
+html { min-height: 100%; margin-bottom: 1px; font-size: 100%;}
+
+/* Globals */
+.fltLeft {float: left;}
+.fltRight {float: right;}
+
+img.fltLeft {float: left; padding-right: 12px;}
+
+/* Colours 
+
+Pink: #C5003E
+Dark Grey: #2B201F
+Pale Yellow: #F1E4B7
+Dark Purple: #601B26
+Light Green: #9DCB40
+Dark Brown: #2B201F
+*/
+
+/* Layout */
+
+	body {font: 14px/1.6 'Helvetica Neue', Calibri, Arial, Helvetica, sans-serif; background: #F1E4B7 url('../images/BG-Inside.png') repeat-x; color: #2B201F; text-align: center;}
+		body#body-index {background: #39261c url('../images/BG-index.png') repeat-x;}
+
+	.wrap { width: 960px; text-align: left; margin: 0 auto; }
+
+/* Navigation Menu */
+	#nav {background: url('../images/BG-Top-Nav.png') repeat; margin: 11px 0 7px 10px;}
+	#nav ul {margin: 10px 30px; float: left;}
+	#nav ul li { display: inline; margin-right: 40px;}
+
+	/* Pixelogue Logo */
+		#nav h1#logo {float: left;}
+		#nav h1#logo span {position: absolute; top: 0; left: -999px;}
+		#nav h1#logo, #nav h1#logo a { padding: 0; width: 144px; height: 42px; background: url('../images/Pixelogue-Logo.png') no-repeat; display: block;}
+
+/* Main Content Area */
+	#content {padding: 50px 10px 50px 10px;}
+		body#body-index #content { padding: 28px 10px 20px 10px; background: url('../images/BG-Splash.png') no-repeat;}
+
+body#body-index #primary {width: 380px; float: left; margin-right: 20px;}
+
+/* Home Page Gallery */
+	#gallery {width: 460px; float: right;}
+	#gallery li { display: -moz-inline-block; display: inline-block; float: left; background-color: #d3c6a0; border: 4px solid #d3c6a0; margin-right: 1px;list-style-type: none; margin-left: 0;}
+	#gallery p {text-align: right; margin-right: 10px;}
+	#gallery li a {padding: 0; margin: 0;}
+
+#primary {width: 220px; float: left; margin-right: 20px;}
+	body#body-index #primary {width: 460px; padding-top: 60px;}
+	body#body-about #primary {width: auto;}
+.col {width: 220px; float: left; margin-right: 20px;}
+
+	/* Slideshow Custom Styling */
+	#slider {border: 7px solid #c2b693; float: left; position:relative; width:686px; height:386px; background: #d3c6a0 url(../images/loader.gif) no-repeat 50% 50%;}
+	#slider img { position: absolute; top: 0px; left: 0px; display: none;}
+	#slider a { border:0; display:block;}
+	
+	.nivo-controlNav { position:absolute; left:0; bottom:-38px;}
+	.nivo-controlNav a { display:block; width:22px; height:10px; background:url(../images/Icon-Gallery-Nav.png) no-repeat; text-indent:-9999px; border:0; margin-right:3px; float:left; }
+	.nivo-controlNav a:hover, .nivo-controlNav a.active { background-position:0 -10px;}
+	.nivo-directionNav a { display:block; width:30px; height:30px; background:url(../images/arrows.png) no-repeat; text-indent:-9999px; border:0;}
+	a.nivo-nextNav { background-position:-30px 0; right:15px;}
+	a.nivo-prevNav { left:15px;}
+	.nivo-caption { text-shadow: 1px solid #CCC; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 600; background: #2B201F !important; color: #FFF !important; text-transform: uppercase;}
+	.nivo-caption a { color:#efe9d1; text-decoration:underline;}
+	
+ul#work-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0;
+}
+ul#work-list li {
+    background: url("/images/tile-boxes.jpg") repeat scroll 0 0 transparent;
+    float: left;
+    margin: 0 38px 38px 0;
+    padding: 15px 15px 10px;
+}
+ul#work-list li.end {
+    margin: 0 0 38px;
+}
+
+#announcement { background: #F1E4B7; margin-top: 24px; padding: 7px 0 6px 0;}
+#announcement h3 {font-weight: 900; text-align: center;}
+	
+#footer { background: #2B201F url('../images/BG-Top-Nav.png') repeat-x; padding: 12px 10px 5px 10px; color: #F1E4B7; vertical-align: middle;}
+	#footer img {margin-left: 240px;}
+
+/* Typography */
+
+p {margin: 0 0 1em 0;}
+em { font-weight: 300; font-style: italic;}
+strong {font-weight: 600;}
+strong em {font-weight: 600;}
+
+ul li { margin-left: 16px; list-style-type: square;}
+.fancyAmp { font-family: Baskerville; font-style: italic; font-size: 120%;}
+
+#content h1, #content h2 { font: 600 18px/1.8 'Helvetica Neue', Helvetica, Arial, sans-serif; margin-bottom: 1em;}
+#content h1 {font-size: 22px; line-height: 1.3; font-weight: 600;}
+	body#body-index #content #primary h1 { font-weight: 900; font-size: 26px; line-height: 1.6; color: #38261D;}
+	body#body-index #content #primary h2 {line-height: 1.5; font-size: 20px; color: #38261D; font-weight: 300;}
+
+#nav ul li { margin-left: 0; list-style-type: none;}
+
+body#body-about #content h1 {width: 460px; font-size: 18px; line-height: 1.5;}
+
+/* Link Styling */
+
+a:link, a:visited, a:hover, a:focus {text-decoration: none; color: #2B201F; font-weight: 500; padding-bottom: 1px;}
+a:hover { border-bottom: 1px #FF8598 dotted; color: #FF8598; padding-bottom: 1px;}
+
+h1#logo a:hover {border-bottom: 0 none;}
+
+	#nav ul li a:link, #nav ul li a:visited, #nav ul li a:hover, #nav ul li a:focus { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; text-decoration: none; color: #F1E4B7; font-size: 15px; line-height: 1.4; font-weight: 500;}
+	#nav ul li a:hover, body#body-index #nav ul li#nav-home a, body#body-about #nav ul li#nav-about a, body#body-work li#nav-work a, body#body-contact #nav ul li#nav-contact a { color: #FF0033; border-bottom: 2px solid #FF0033; padding-bottom: 2px;}
+
+.nivo-controlNav a:hover, .nivo-directionNav a:hover {border-bottom: 0 none; padding-bottom: 0;}
+
+#announcement a, .visit-site a {color: #2B211F; font-weight: 900; font-size: 12px; text-decoration: none; display: inline-block; width: auto; background: #d3c6a0; padding: 5px 16px; border-radius: 15px; -moz-border-radius: 15px; border-bottom: none; text-transform: uppercase;}
+#announcement a:hover, .visit-site a:hover { background: #F03; color: #FFF;}
